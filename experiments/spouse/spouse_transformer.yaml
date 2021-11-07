@@ -1,0 +1,47 @@
+experiment_name: "spam_transformer"
+
+dataset:
+  dataset_path: /raid/user-data/nlp_share/KnodleData/spouse/processed
+
+model_params:
+  feature_ext: distilbert-base-cased # ['roberta-base', 'distilbert-base-cased']
+  F_hidden_sizes: [1000, 500]
+  F_layers: 1
+  C_layers: 1
+  D_layers: 1
+  n_critic: 5
+  lambd: 2.0
+  F_bn: false
+  C_bn: true
+  D_bn: ture
+  dropout: 0.4
+  max_length_transformer: 250
+  feature_num: 26503
+  shared_hidden_size: 700
+  num_labels: 2
+  all_domains: 9
+  domains: []
+  activation: relu
+  domain_hidden_size: 0
+  loss: gr
+
+training_setting:
+  random_seed: 1
+
+  use_tensorboard: true
+  tensorboard_dir: ./tensorboard_logging/spouse/spouse_exp
+
+  device: cuda:1
+  debug: true
+
+  max_epoch: 15
+  batch_size: 16
+  batches_between_logging: 695
+  evaluate_after_batches_between_logging: true
+
+  learning_rate: 0.0001
+  D_learning_rate: 0.0001
+  transformer_weight_decay: 0.01
+
+  model_save_file: ./save/spouse/spouse_exp
+  test_only: false

@@ -1,0 +1,49 @@
+experiment_name: "imbd"
+
+dataset:
+  dataset_path: /raid/user-data/nlp_share/KnodleData/imdb/processed/
+
+model_params:
+  feature_ext: distilbert-base-cased # ['roberta-base', 'distilbert-base-cased']
+  F_hidden_sizes: [1000, 500]
+  F_layers: 2
+  C_layers: 1
+  D_layers: 10
+  n_critic: 50
+  lambd: 5.0
+  F_bn: false
+  C_bn: true
+  D_bn: true
+  dropout: 0.2752300511765772
+  max_length_transformer: 250
+  feature_num: 94633
+  shared_hidden_size: 584
+  num_labels: 2
+  all_domains: 6786
+  domains: []
+  activation: relu
+  domain_hidden_size: 0
+  loss: gr
+
+training_setting:
+  random_seed: 1
+
+  use_tensorboard: true
+  tensorboard_dir: ./tensorboard_logging/new_logging/imdb/man_imdb_transformers_l0
+
+  device: cuda:1
+  debug: true
+
+  max_epoch: 15
+  batch_size: 895
+  batches_between_logging: 2500
+  evaluate_after_batches_between_logging: true
+
+  learning_rate: 0.001
+  D_learning_rate: 0.000922510274469868
+  transformer_weight_decay: 0.01
+
+  model_save_file: ./save/imdb/man_imdb_transformers_l0
+  test_only: false
+
+

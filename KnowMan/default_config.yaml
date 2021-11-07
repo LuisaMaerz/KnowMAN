@@ -1,0 +1,16 @@
+experiment_name: "knowman_exp"
+
+dataset:
+  dataset_path: none
+
+model_params:
+  activation: relu
+  loss: gr
+
+training_setting:
+  random_seed: 1
+  use_tensorboard: true
+  device: cuda
+  debug: true
+  evaluate_after_batches_between_logging: true
+  test_only: false
