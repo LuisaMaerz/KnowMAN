@@ -43,7 +43,8 @@ model and a feature-based baseline.
 
 
 Experiments described in our paper can be found in the **experiments** folder. 
-To run them execute the respective file. 
+To run them execute the respective file. </br>
+**Please make sure that you have downloaded the data files in advance (see datasets section) and adjusted the datafile path in the yaml files!**
 
 
 E.g. run the imdb tfidf training:
