@@ -91,16 +91,26 @@ All datasets are part of the the [Knodle](https://github.com/knodle/knodle) fram
 ---
 ## Citation 📑 
 
-When using our work please cite our ArXive preprint:
+When using our work please cite our Acl Anthology print:
 
 ```
-@article{Mrz2021KnowMANWS,
-      title={KnowMAN: Weakly Supervised Multinomial Adversarial Networks},
-      author={Luisa März and Ehsaneddin Asgari and Fabienne Braune and Franziska Zimmermann and Benjamin Roth}, 
-      journal={ArXiv}, 
-      year={2021}, 
-      volume={abs/2109.07994} 
+@inproceedings{marz-etal-2021-knowman,
+    title = "{K}now{MAN}: Weakly Supervised Multinomial Adversarial Networks",
+    author = {M{\"a}rz, Luisa  and
+      Asgari, Ehsaneddin  and
+      Braune, Fabienne  and
+      Zimmermann, Franziska  and
+      Roth, Benjamin},
+    booktitle = "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2021",
+    address = "Online and Punta Cana, Dominican Republic",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.emnlp-main.751",
+    pages = "9549--9557",
+    abstract = "The absence of labeled data for training neural models is often addressed by leveraging knowledge about the specific task, resulting in heuristic but noisy labels. The knowledge is captured in labeling functions, which detect certain regularities or patterns in the training samples and annotate corresponding labels for training. This process of weakly supervised training may result in an over-reliance on the signals captured by the labeling functions and hinder models to exploit other signals or to generalize well. We propose KnowMAN, an adversarial scheme that enables to control influence of signals associated with specific labeling functions. KnowMAN forces the network to learn representations that are invariant to those signals and to pick up other signals that are more generally associated with an output label. KnowMAN strongly improves results compared to direct weakly supervised learning with a pre-trained transformer language model and a feature-based baseline.",
 }
+
 ```
 
 ## Acknowledgments 💎 
