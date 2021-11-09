@@ -7,7 +7,7 @@ This repository contains code that is used in our paper: </br>
 by Luisa März, Ehsaneddin Asgari, Fabienne Braune, Franziska Zimmermann and Benjamin Roth.
 
 
-For any questions please [get in touch](luisa.maerz@volkswagen.de)
+For any questions please [get in touch](mailto:luisa.maerz@volkswagen.de)
 
 ---
 ## What is KnowMAN about?  🤓 
